@@ -20,11 +20,11 @@ class Page extends BaseController
         return view('auth/register', $data);
     }
 
-    public function user()
+    public function home()
     {
         $data = [
             'title' => "Home"
         ];
-        return view('user/index', $data);
+        return view('page/index', $data);
     }
 }
