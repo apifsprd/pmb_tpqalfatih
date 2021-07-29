@@ -11,7 +11,7 @@
             <div class="modal-content modal-content-header-2-2">
                 <div class="modal-header" style="padding:	2rem; padding-bottom: 0;">
                     <a class="modal-title" id="targetModalLabel-header-2-2">
-                        <img style="margin-top:0.5rem" src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-5.png" alt="">
+                        <img style="margin-top:0.5rem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="">
                     </a>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     </button>
@@ -19,7 +19,7 @@
                 <div class="modal-body" style="padding:	2rem; padding-top: 0; padding-bottom: 0;">
                     <ul class="navbar-nav responsive-header-2-2 me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Beranda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Kelas</a>
@@ -46,7 +46,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Beranda</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Kelas</a>
