@@ -3,6 +3,38 @@
 <?= $this->section('content') ?>
 <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
 
+    <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
+
+        <?= $this->include('layouts/page/navbar') ?>
+
+        <div>
+            <div class="mx-auto d-flex flex-lg-row flex-column hero-header-2-2">
+                <!-- Left Column -->
+                <div class="left-column-header-2-2 d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+                    <p class="text-caption-header-2-2">Pesanggrahan, Jakarta Selatan</p>
+                    <h1 class="title-text-big-header-2-2 d-lg-inline d-none">Tempat Pembelajaran <br> Al Qur'an Al Fatih</h1>
+                    <h1 class="title-text-small-header-2-2 d-lg-none d-inline">Tempat Pembelajaran <br> Al Qur'an Al Fatih</h1>
+                    <div class="div-button-header-2-2 d-inline d-lg-flex align-items-center mx-lg-0 mx-auto justify-content-center">
+                        <a class="btn d-inline-flex mb-md-0 btn-try-header-2-2" href="<?= base_url('user'); ?>">Daftar</a>
+                        <a class="btn btn-outline-header-2-2">
+                            <div class="d-flex align-items-center">
+                                Lihat Informasi
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="right-column-header-2-2 text-center d-flex justify-content-center pe-0">
+                    <img id="img-fluid" style="display: block; width: 80%;height: auto;" src="https://www.mtssalafiyahsimbangkulon2.sch.id/ard/assets/images/MI.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
+
     <div style="font-family: 'Poppins', sans-serif;">
 
         <div class="text-center title-text-content-2-2">
@@ -18,19 +50,19 @@
                     </div>
                     <h3 class="icon-content-2-2-title">Iqro & Juz Amma</h3>
                     <p class="icon-content-2-2-caption">Dimulai dari mengenal huruf<br>
-                         hijaiyah lalu surat pendek</p>
+                        hijaiyah lalu surat pendek</p>
                 </div>
                 <div class="col-lg-4 column-content-2-2">
                     <div class="icon-content-2-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="" style="width: 3.5rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="" style="width: 3.5rem;">
                     </div>
                     <h3 class="icon-content-2-2-title">Tahsin</h3>
                     <p class="icon-content-2-2-caption">Belajar tahsin dengan makhorijul<br>
-                     huruf yang benar</p>
+                        huruf yang benar</p>
                 </div>
                 <div class="col-lg-4 column-content-2-2">
                     <div class="icon-content-2-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="" style="width: 3.5rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="" style="width: 3.5rem;">
                     </div>
                     <h3 class="icon-content-2-2-title">Tahfidz</h3>
                     <p class="icon-content-2-2-caption">Bimbingan dalam menghapal<br>
@@ -81,7 +113,7 @@
                             <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
                                 1
                             </span>
-                           Pengajar bersertifikat
+                            Pengajar bersertifikat
                         </h4>
                         <p class="text-caption-content-3-2 d-sm-inline d-none">
                             Pengajar yang berpengalaman dan bersertifikat Tahfidz.

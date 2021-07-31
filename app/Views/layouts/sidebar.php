@@ -17,14 +17,21 @@
                 <li class="sidebar-title">Menu</li>
 
                 <li class="sidebar-item">
-                    <a href="/mazer" class='sidebar-link'>
+                    <a href="<?= base_url('user'); ?>" class='sidebar-link'>
                         <i class="bi bi-house-door-fill"></i>
                         <span>Beranda</span>
                     </a>
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="/mazer" class='sidebar-link'>
+                    <a href="<?= base_url('user/daftar'); ?>" class='sidebar-link'>
+                        <i class="bi bi-file-earmark-fill"></i>
+                        <span>Form Pendaftaran</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="<?= base_url('user/profile'); ?>" class='sidebar-link'>
                         <i class="bi bi-person-circle"></i>
                         <span>Profil</span>
                     </a>

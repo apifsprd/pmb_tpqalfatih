@@ -27,4 +27,36 @@ class Page extends BaseController
         ];
         return view('page/index', $data);
     }
+
+    public function kelas()
+    {
+        $data = [
+            'title' => "Kelas"
+        ];
+        return view('page/kelas', $data);
+    }
+
+    public function guru()
+    {
+        $data = [
+            'title' => "Guru"
+        ];
+        return view('page/guru', $data);
+    }
+
+    public function pendaftaran()
+    {
+        $data = [
+            'title' => "pendaftaran"
+        ];
+        return view('page/pendaftaran', $data);
+    }
+
+    public function info()
+    {
+        $data = [
+            'title' => "informasi"
+        ];
+        return view('page/informasi', $data);
+    }
 }

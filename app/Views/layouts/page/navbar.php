@@ -19,19 +19,19 @@
                 <div class="modal-body" style="padding:	2rem; padding-top: 0; padding-bottom: 0;">
                     <ul class="navbar-nav responsive-header-2-2 me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Beranda</a>
+                            <a class="nav-link" href="<?= base_url('page/home'); ?>">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kelas</a>
+                            <a class="nav-link" href="<?= base_url('page/kelas'); ?>">Kelas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Guru</a>
+                            <a class="nav-link" href="<?= base_url('page/guru'); ?>">Guru</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pendaftaran</a>
+                            <a class="nav-link" href="<?= base_url('page/pendaftaran'); ?>">Pendaftaran</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Informasi</a>
+                            <a class="nav-link" href="<?= base_url('page/info'); ?>">Informasi</a>
                         </li>
                     </ul>
                 </div>
@@ -46,19 +46,19 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Beranda</a>
+                <a class="nav-link" href="<?= base_url('page/home'); ?>">Beranda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kelas</a>
+                <a class="nav-link" href="<?= base_url('page/kelas'); ?>">Kelas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Guru</a>
+                <a class="nav-link" href="<?= base_url('page/guru'); ?>">Guru</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pendaftaran</a>
+                <a class="nav-link" href="<?= base_url('page/pendaftaran'); ?>">Pendaftaran</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Informasi</a>
+                <a class="nav-link" href="<?= base_url('page/info'); ?>">Informasi</a>
             </li>
         </ul>
         <a class="btn btn-default btn-no-fill-header-2-2" href="<?= base_url('user'); ?>">Masuk</a>
