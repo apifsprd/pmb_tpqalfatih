@@ -23,12 +23,15 @@
                     </a>
                 </li>
 
-                <li class="sidebar-item">
-                    <a href="<?= base_url('user/daftar'); ?>" class='sidebar-link'>
-                        <i class="bi bi-file-earmark-fill"></i>
-                        <span>Form Pendaftaran</span>
-                    </a>
-                </li>
+
+                <?php if (in_groups('user')) : ?>
+                    <li class="sidebar-item">
+                        <a href="<?= base_url('user/daftar'); ?>" class='sidebar-link'>
+                            <i class="bi bi-file-earmark-fill"></i>
+                            <span>Form Pendaftaran</span>
+                        </a>
+                    </li>
+                <?php endif; ?>
 
                 <li class="sidebar-item">
                     <a href="<?= base_url('user/profile'); ?>" class='sidebar-link'>
@@ -41,14 +44,14 @@
                     <li class="sidebar-title">Menagement</li>
 
                     <li class="sidebar-item">
-                        <a href="/mazer" class='sidebar-link'>
+                        <a href="<?= base_url('user/daftarPengguna'); ?>" class='sidebar-link'>
                             <i class="bi bi-people-fill"></i>
                             <span>Daftar Pengguna</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a href="/mazer" class='sidebar-link'>
+                        <a href="<?= base_url('user/dataPendaftar'); ?>" class='sidebar-link'>
                             <i class="bi bi-file-earmark-fill"></i>
                             <span>Data Pendaftar</span>
                         </a>

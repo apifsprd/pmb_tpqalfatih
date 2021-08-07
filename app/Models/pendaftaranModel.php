@@ -36,6 +36,7 @@ class pendaftaranModel extends Model
         'nohp',
         'alamat',
         'status_approve',
+        'oleh',
     ];
 
     public function getData($id = FALSE)
@@ -45,5 +46,10 @@ class pendaftaranModel extends Model
         }
 
         return $this->where(['id' => $id])->first();
+    }
+
+    public function getSpecific($username)
+    {
+        return $this->where(['oleh' => $username])->findAll();
     }
 }

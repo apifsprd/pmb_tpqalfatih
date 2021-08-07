@@ -42,7 +42,7 @@
                                         <li><a class="dropdown-item" href="#">No new mail</a></li>
                                     </ul>
                                 </li> -->
-                                <li class="nav-item dropdown me-3">
+                                <!-- <li class="nav-item dropdown me-3">
                                     <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
                                     </a>
@@ -52,14 +52,14 @@
                                         </li>
                                         <li><a class="dropdown-item">No notification available</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                             <div class="dropdown">
                                 <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="user-menu d-flex">
                                         <div class="user-name text-end me-3">
-                                            <h6 class="mb-0 text-gray-600"><?= user()->fullname; ?></h6>
-                                            <p class="mb-0 text-sm text-gray-600"><?= user()->username; ?></p>
+                                            <h6 class="mb-0 text-gray-600"><?= user()->username; ?></h6>
+                                            <p class="mb-0 text-sm text-gray-600"><?= user()->email; ?></p>
                                         </div>
                                         <div class="user-img d-flex align-items-center">
                                             <div class="avatar avatar-md">
@@ -70,9 +70,9 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                                     <li>
-                                        <h6 class="dropdown-header">Hello, John!</h6>
+                                        <h6 class="dropdown-header">Hello, <?= user()->username; ?>!</h6>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-person me-2"></i> My
+                                    <li><a class="dropdown-item" href="<?= base_url('user/profile'); ?>"><i class="icon-mid bi bi-person me-2"></i> My
                                             Profile</a></li>
                                     <!-- <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
                                             Settings</a></li>
@@ -81,7 +81,7 @@
                                     <li> -->
                                     <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('logout'); ?>"><i class="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </div>
