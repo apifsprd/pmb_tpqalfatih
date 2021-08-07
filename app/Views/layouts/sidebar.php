@@ -59,7 +59,7 @@
 
                     <?php if (in_groups('superadmin')) : ?>
                         <li class="sidebar-item">
-                            <a href="/mazer" class='sidebar-link'>
+                            <a href="<?= base_url('user/dataValid'); ?>" class='sidebar-link'>
                                 <i class="bi bi-file-check-fill"></i>
                                 <span>Data Valid</span>
                             </a>

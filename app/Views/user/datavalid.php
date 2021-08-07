@@ -118,8 +118,8 @@
                                         <td><?= $d['oleh']; ?></td>
                                         <td>
                                             <a href="<?= base_url('user/lihatBerkas'); ?>/<?= $d['id']; ?>" class="btn btn-outline-secondary btn-sm" title="Lihat Berkas"><i class="bi bi-file-earmark-text-fill"></i></a>
-                                            <a href="<?= base_url('user/delete'); ?>/<?= $d['id']; ?>" class="btn btn-outline-danger btn-sm" title="Hapus Berkas"><i class="bi bi-trash-fill"></i></a>
-                                            <a href="<?= base_url('user/approve'); ?>/<?= $d['id']; ?>" class="btn btn-outline-success btn-sm" title="Approve Berkas"><i class="bi bi-patch-check-fill"></i></a>
+                                            <!-- <a href="<?= base_url('user/delete'); ?>/<?= $d['id']; ?>" class="btn btn-outline-danger btn-sm" title="Hapus Berkas"><i class="bi bi-trash-fill"></i></a> -->
+                                            <!-- <a href="<?= base_url('user/approve'); ?>/<?= $d['id']; ?>" class="btn btn-outline-success btn-sm" title="Approve Berkas"><i class="bi bi-patch-check-fill"></i></a> -->
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

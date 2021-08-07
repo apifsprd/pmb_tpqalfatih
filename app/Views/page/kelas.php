@@ -17,16 +17,16 @@
         }
 
         .empty-2-2 .main-img {
-            object-fit: cover;
+            /* object-fit: cover; */
             object-position: center;
-            margin-bottom: 3rem;
-            width: 75%;
+            /* margin-bottom: 3rem; */
+            /* width: 75%; */
         }
 
         .empty-2-2 .title-text {
             color: #272E35;
             font: 600 1.875rem/2.25rem Poppins, sans-serif;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
         }
 
         .empty-2-2 .title-caption {
@@ -67,7 +67,7 @@
     </style>
 
     <div class="empty-2-2 container mx-auto d-flex align-items-center justify-content-center flex-column" style="font-family: 'Poppins', sans-serif;">
-        <img class="main-img img-fluid" src="https://www.ex-worksph.com/wp-content/uploads/2021/06/construction-website-1.png" alt="" style="width: 500px">
+        <img class="main-img img-fluid" src="https://www.ex-worksph.com/wp-content/uploads/2021/06/construction-website-1.png" alt="" style="width: 300px">
 
         <div class="text-center w-100">
             <h1 class="title-text">

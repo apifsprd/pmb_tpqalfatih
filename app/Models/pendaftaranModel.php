@@ -52,4 +52,14 @@ class pendaftaranModel extends Model
     {
         return $this->where(['oleh' => $username])->findAll();
     }
+
+    public function getNonApprove()
+    {
+        return $this->where(['status_approve' => 0])->findAll();
+    }
+
+    public function getValid()
+    {
+        return $this->where(['status_approve' => 1])->findAll();
+    }
 }

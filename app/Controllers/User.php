@@ -152,10 +152,59 @@ class User extends BaseController
 
     public function dataPendaftar()
     {
+        $db      = \Config\Database::connect();
+        $builder = $db->table('pendaftaran');
+        $builder->where('status_approve', 0);
+        $query = $builder->countAllResults();
+
+        $builder->where('status_approve', 1);
+        $query2 = $builder->countAllResults();
+
         $data = [
             'title' => 'Daftar Pengguna',
-            'data' => $this->pendaftaranModel->getData()
+            'data' => $this->pendaftaranModel->getNonApprove(),
+            'cna' => $query,
+            'ca' => $query2
         ];
         return view('user/dataPendaftar', $data);
+    }
+
+    public function lihatBerkas($id)
+    {
+        $data = [
+            'title' => "Lihat Berkas",
+            'data' => $this->pendaftaranModel->getData($id)
+        ];
+        return view('user/lihatberkas', $data);
+    }
+
+    public function approve($id)
+    {
+        $this->pendaftaranModel->save([
+            'id' => $id,
+            'status_approve' => '1'
+        ]);
+
+        session()->setFlashdata('pesan', 'Berkas Pendaftaran Berhasil Disetujui');
+
+        return redirect()->to('/user/dataPendaftar');
+    }
+
+    public function dataValid()
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table('pendaftaran');
+        $builder->where('status_approve', 0);
+        $query = $builder->countAllResults();
+
+        $builder->where('status_approve', 1);
+        $query2 = $builder->countAllResults();
+        $data = [
+            'title' => "Data Valid",
+            'data' => $this->pendaftaranModel->getValid(),
+            'cna' => $query,
+            'ca' => $query2
+        ];
+        return view('user/datavalid', $data);
     }
 }
