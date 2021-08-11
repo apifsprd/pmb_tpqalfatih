@@ -57,6 +57,34 @@
                         </a>
                     </li>
 
+                    <li class="sidebar-item">
+                        <a href="<?= base_url('user/guru'); ?>" class='sidebar-link'>
+                            <i class="bi bi-file-earmark-fill"></i>
+                            <span>Data Guru</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="<?= base_url('user/kelas'); ?>" class='sidebar-link'>
+                            <i class="bi bi-file-earmark-fill"></i>
+                            <span>Data Kelas</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="<?= base_url('user/persyaratan'); ?>" class='sidebar-link'>
+                            <i class="bi bi-file-earmark-fill"></i>
+                            <span>Data Persyaratan</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="<?= base_url('user/guru'); ?>" class='sidebar-link'>
+                            <i class="bi bi-file-earmark-fill"></i>
+                            <span>Data Info</span>
+                        </a>
+                    </li>
+
                     <?php if (in_groups('superadmin')) : ?>
                         <li class="sidebar-item">
                             <a href="<?= base_url('user/dataValid'); ?>" class='sidebar-link'>

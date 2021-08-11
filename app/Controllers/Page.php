@@ -2,8 +2,26 @@
 
 namespace App\Controllers;
 
+use App\Models\pendaftaranModel;
+use App\Models\guruModel;
+use App\Models\kelasModel;
+use App\Models\persyaratanModel;
+
 class Page extends BaseController
 {
+    protected $pendaftaranModel;
+    protected $guruModel;
+    protected $kelasModel;
+    protected $persyaratanModel;
+
+    public function __construct()
+    {
+        $this->pendaftaranModel = new pendaftaranModel();
+        $this->guruModel = new guruModel();
+        $this->kelasModel = new kelasModel();
+        $this->persyaratanModel = new persyaratanModel();
+    }
+
     public function index()
     {
         $data = [
@@ -30,6 +48,8 @@ class Page extends BaseController
 
     public function kelas()
     {
+
+
         $data = [
             'title' => "Kelas"
         ];

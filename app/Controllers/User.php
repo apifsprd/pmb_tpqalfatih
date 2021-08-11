@@ -3,17 +3,26 @@
 namespace App\Controllers;
 
 use App\Models\pendaftaranModel;
+use App\Models\guruModel;
+use App\Models\kelasModel;
 use Myth\Auth\Models\UserModel;
+use App\Models\persyaratanModel;
 
 class User extends BaseController
 {
     protected $pendaftaranModel;
     protected $UserModel;
+    protected $guruModel;
+    protected $kelasModel;
+    protected $persyaratanModel;
 
     public function __construct()
     {
         $this->pendaftaranModel = new pendaftaranModel();
         $this->UserModel = new UserModel();
+        $this->guruModel = new guruModel();
+        $this->kelasModel = new kelasModel();
+        $this->persyaratanModel = new persyaratanModel();
     }
 
     public function index()
@@ -43,6 +52,40 @@ class User extends BaseController
         ];
         return view('user/profile', $data);
     }
+
+    public function editProfile($id)
+    {
+        $data = [
+            'title' => "Profile",
+            'data' => $this->UserModel->getData($id)
+        ];
+        return view('user/editProfile', $data);
+    }
+
+    public function updateProfile($id)
+    {
+
+        $rules = [
+            'username' => 'required|alpha_numeric_space|min_length[3]|max_length[30]',
+            'email'    => 'required|valid_email',
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        $this->UserModel->save([
+            'id' => $id,
+            'fullname' => $this->request->getVar('fullname'),
+            'username' => $this->request->getVar('username'),
+            'email' => $this->request->getVar('email')
+        ]);
+
+        session()->setFlashdata('pesan', 'Profile berhasil diubah');
+
+        return redirect()->to('/user/profile');
+    }
+
 
     public function editBerkas($id)
     {
@@ -206,5 +249,184 @@ class User extends BaseController
             'ca' => $query2
         ];
         return view('user/datavalid', $data);
+    }
+
+    // ===================================================== GURU
+
+    public function guru()
+    {
+        $data = [
+            'title' => "Data Guru",
+            'data'  => $this->guruModel->getData()
+        ];
+        return view('user/guru', $data);
+    }
+
+    public function createDataGuru()
+    {
+        $data = [
+            'title' => "Tambah Data Guru"
+        ];
+        return view('user/createdataguru', $data);
+    }
+
+    public function editDataGuru($id)
+    {
+        $data = [
+            'title' => "Edit Data Guru",
+            'data' => $this->guruModel->getData($id)
+        ];
+        return view('user/editdataguru', $data);
+    }
+
+    public function updateDataGuru($id)
+    {
+        $this->guruModel->save([
+            'id' => $id,
+            'nama' => $this->request->getVar('nama'),
+            'jabatan' => $this->request->getVar('jabatan'),
+        ]);
+
+        session()->setFlashdata('pesan', 'Data guru berhasil di ubah');
+
+        return redirect()->to('/user/guru');
+    }
+
+    public function saveDataGuru()
+    {
+        $this->guruModel->insert([
+            'nama' => $this->request->getVar('nama'),
+            'jabatan' => $this->request->getVar('jabatan'),
+        ]);
+
+        session()->setFlashdata('pesan', 'Data guru berhasil di simpan');
+
+        return redirect()->to('/user/guru');
+    }
+
+    public function deleteDataGuru($id)
+    {
+        $this->guruModel->delete($id);
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
+        return redirect()->to('/user/guru');
+    }
+
+
+    // ===================================================== KELAS
+
+    public function kelas()
+    {
+        $data = [
+            'title' => "Data Kelas",
+            'data'  => $this->kelasModel->getData()
+        ];
+        return view('user/kelas', $data);
+    }
+
+    public function createDataKelas()
+    {
+        $data = [
+            'title' => "Tambah Data Kelas"
+        ];
+        return view('user/createdatakelas', $data);
+    }
+
+    public function saveDataKelas()
+    {
+        $this->kelasModel->insert([
+            'namaSantri' => $this->request->getVar('nama'),
+            'kelas' => $this->request->getVar('kelas'),
+        ]);
+
+        session()->setFlashdata('pesan', 'Data kelas berhasil di simpan');
+
+        return redirect()->to('/user/kelas');
+    }
+
+    public function deleteDataKelas($id)
+    {
+        $this->kelasModel->delete($id);
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
+        return redirect()->to('/user/kelas');
+    }
+
+    public function editDataKelas($id)
+    {
+        $data = [
+            'title' => "Edit Data kelas",
+            'data' => $this->kelasModel->getData($id)
+        ];
+        return view('user/editdatakelas', $data);
+    }
+
+    public function updateDataKelas($id)
+    {
+        $this->kelasModel->save([
+            'id' => $id,
+            'namaSantri' => $this->request->getVar('nama'),
+            'kelas' => $this->request->getVar('kelas'),
+        ]);
+
+        session()->setFlashdata('pesan', 'Data kelas berhasil di ubah');
+
+        return redirect()->to('/user/kelas');
+    }
+
+    // ===================================================== persyaratan
+
+    public function persyaratan()
+    {
+        $data = [
+            'title' => "Data Persyaratan",
+            'data'  => $this->persyaratanModel->getData()
+        ];
+        return view('user/persyaratan', $data);
+    }
+
+    public function editDataPersyaratan($id)
+    {
+        $data = [
+            'title' => "Edit Data Persyaratan",
+            'data' => $this->persyaratanModel->getData($id)
+        ];
+        return view('user/editdatapersyaratan', $data);
+    }
+
+    public function createDataPersyaratan()
+    {
+        $data = [
+            'title' => "Tambah Data Persyaratan"
+        ];
+        return view('user/createdatapersyaratan', $data);
+    }
+
+    public function saveDataPersyaratan()
+    {
+        $this->persyaratanModel->insert([
+            'namaPersyaratan' => $this->request->getVar('persyaratan')
+        ]);
+
+        session()->setFlashdata('pesan', 'Data persyaratan berhasil di simpan');
+
+        return redirect()->to('/user/persyaratan');
+    }
+
+    public function updateDataPersyaratan($id)
+    {
+        $this->persyaratanModel->save([
+            'id' => $id,
+            'namaPersyaratan' => $this->request->getVar('persyaratan'),
+        ]);
+
+        session()->setFlashdata('pesan', 'Data persyaratan berhasil di ubah');
+
+        return redirect()->to('/user/persyaratan');
+    }
+
+    public function deleteDataPersyaratan($id)
+    {
+        $this->persyaratanModel->delete($id);
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
+        return redirect()->to('/user/persyaratan');
     }
 }
