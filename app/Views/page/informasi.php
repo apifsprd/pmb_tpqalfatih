@@ -7,7 +7,7 @@
     </div>
 </section>
 
-<section class="h-100 w-100 bg-white" style="box-sizing: border-box;">
+<!-- <section class="h-100 w-100 bg-white" style="box-sizing: border-box;">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -83,5 +83,94 @@
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Persyaratan Pendaftaran</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                    <?php foreach ($info as $i) : ?>
+                                        <li><?= $i['namaPersyaratan']; ?></li>
+                                    <?php endforeach; ?>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
+
+    <div style="font-family: 'Poppins', sans-serif;">
+
+        <!-- <div class="text-center title-text-content-2-2">
+            <h1 class="text-title-content-2-2">3 Program Belajar</h1>
+            <p class="text-caption-content-2-2" style="  margin-left: 3rem; margin-right: 3rem;">Program pembelajaran Al Qur'an berjenjang</p>
+        </div>
+
+        <div class="grid-padding-content-2-2 text-center">
+            <div class="row">
+                <div class="col-lg-4 column-content-2-2">
+                    <div class="icon-content-2-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="" style="width: 3.5rem;">
+                    </div>
+                    <h3 class="icon-content-2-2-title">Iqro & Juz Amma</h3>
+                    <p class="icon-content-2-2-caption">Dimulai dari mengenal huruf<br>
+                        hijaiyah lalu surat pendek</p>
+                </div>
+                <div class="col-lg-4 column-content-2-2">
+                    <div class="icon-content-2-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="" style="width: 3.5rem;">
+                    </div>
+                    <h3 class="icon-content-2-2-title">Tahsin</h3>
+                    <p class="icon-content-2-2-caption">Belajar tahsin dengan makhorijul<br>
+                        huruf yang benar</p>
+                </div>
+                <div class="col-lg-4 column-content-2-2">
+                    <div class="icon-content-2-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn8mgGoxQS58Kw6ptGNBRxChmQ227D6585Q&usqp=CAU" alt="" style="width: 3.5rem;">
+                    </div>
+                    <h3 class="icon-content-2-2-title">Tahfidz</h3>
+                    <p class="icon-content-2-2-caption">Bimbingan dalam menghapal<br>
+                        Al Qur'an</p>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="card-block-content-2-2">
+            <div class="card-content-2-2">
+                <div class="d-flex flex-lg-row flex-column align-items-center">
+                    <div class="me-lg-3">
+                        <img src="https://www.mtssalafiyahsimbangkulon2.sch.id/ard/assets/images/MI.jpg" alt="" style="width: 150px;">
+                    </div>
+                    <div class="flex-grow-1 text-lg-start text-center card-text-content-2-2">
+                        <h3 class="card-content-2-2-title">Untuk si buah hati lancar mengaji</h3>
+                        <p class="d-none d-lg-block card-content-2-2-caption">Segera daftarkan si buah hati ke TPQ Alfatih.</p>
+                        <p class="d-block d-lg-none card-content-2-2-caption">Segera daftarkan si buah hati ke TPQ Alfatih.</p>
+                    </div>
+                    <div class="card-btn-space-content-2-2">
+                        <a class="btn btn-card-content-2-2" href="<?= base_url('user'); ?>">Daftar</a>
+                        <button class="btn btn-outline-content-2-2">Lihat Informasi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 <?= $this->endSection() ?>

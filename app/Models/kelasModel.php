@@ -21,4 +21,15 @@ class kelasModel extends Model
 
         return $this->where(['id' => $id])->first();
     }
+
+    public function getDatabyKelas($kelas)
+    {
+        return $this->where(['kelas' => $kelas])->findAll();
+    }
+
+    public function getCountbyKelas($kelas)
+    {
+        $this->where(['kelas' => $kelas]);
+        return $this->countAllResults();
+    }
 }

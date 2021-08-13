@@ -33,6 +33,144 @@
     </div>
 
 </section>
+
+<section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
+    <style>
+
+    </style>
+    <div class="main-content-3-2" style="font-family: 'Poppins', sans-serif;">
+        <div class="d-flex flex-lg-row flex-column align-items-center">
+            <!-- Left Column -->
+            <div class="img-hero-content-3-2 text-center justify-content-center d-flex">
+                <img id="hero-content-3-2" class="img-fluid" src="https://www.mtssalafiyahsimbangkulon2.sch.id/ard/assets/images/MI.jpg" alt="">
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column-content-3-2 d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
+                <h2 class="title-text-content-3-2">Visi & Misi</h2>
+                <ul style="padding:0;margin:0">
+
+                    <li class="list-unstyled" style="margin-bottom: 2rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            </span>
+                            Visi
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            "Membentuk generasi berpendidikan dan berakhlak Islami"
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            "Membentuk generasi berpendidikan dan berakhlak Islami"
+                        </p>
+                    </li>
+
+                    <li class="list-unstyled" style="margin-bottom: 2rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
+                                1
+                            </span>
+                            Misi
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            Menanamkan pemahaman nilai - nilai dan akhlak Islam
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            Menanamkan pemahaman nilai - nilai dan akhlak Islam
+                        </p>
+                    </li>
+                    <li class="list-unstyled" style="margin-bottom: 2rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
+                                2
+                            </span>
+
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            Membiasakan bacaan Al-Quran sejak dini
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            Membiasakan bacaan Al-Quran sejak dini
+                        </p>
+                    </li>
+                    <li class="list-unstyled" style="margin-bottom: 4rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
+                                3
+                            </span>
+
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            Membentuk masyarakat yang berwawasan Islami
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            Membentuk masyarakat yang berwawasan Islami
+                        </p>
+                    </li>
+                    <li class="list-unstyled" style="margin-bottom: 4rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
+                                4
+                            </span>
+
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            Mendidik Anak-anak yang putuh sekolah
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            Mendidik Anak-anak yang putuh sekolah
+                        </p>
+                    </li>
+                    <li class="list-unstyled" style="margin-bottom: 4rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
+                                5
+                            </span>
+
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            Memberantas buta huruf Al-Quran
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            Memberantas buta huruf Al-Quran
+                        </p>
+                    </li>
+                    <li class="list-unstyled" style="margin-bottom: 4rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
+                                6
+                            </span>
+
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            Membiasakan Shalat 5 (Lima) waktu
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            Membiasakan Shalat 5 (Lima) waktu
+                        </p>
+                    </li>
+                    <li class="list-unstyled" style="margin-bottom: 4rem;">
+                        <h4 class="title-caption-content-3-2 d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle-content-3-2 d-flex align-items-center justify-content-center">
+                                7
+                            </span>
+
+                        </h4>
+                        <p class="text-caption-content-3-2 d-sm-inline d-none">
+                            Memperkuat ikatan persaudaraan sesama Muslim
+                        </p>
+                        <p class="text-caption-content-3-2 d-sm-none d-inline">
+                            Memperkuat ikatan persaudaraan sesama Muslim
+                        </p>
+                    </li>
+                </ul>
+                <!-- <a class="btn btn-content-3-2" href="<?= base_url('user'); ?>">Daftar</a> -->
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
 <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
 
     <div style="font-family: 'Poppins', sans-serif;">
@@ -93,6 +231,7 @@
     </div>
 
 </section>
+
 <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
     <style>
 
@@ -144,7 +283,7 @@
                             Laporan Lengkap
                         </h4>
                         <p class="text-caption-content-3-2 d-sm-inline d-none">
-                            Proses pembelajaran santri terlapor jelas untuk informasi <br> bagi wali santri.
+
                         </p>
                         <p class="text-caption-content-3-2 d-sm-none d-inline">
                             Proses pembelajaran santri terlapor jelas untuk informasi bagi wali santri.

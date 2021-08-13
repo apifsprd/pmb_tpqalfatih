@@ -7,7 +7,7 @@
     </div>
 </section>
 
-<section class="h-100 w-100 bg-white" style="box-sizing: border-box;">
+<!-- <section class="h-100 w-100 bg-white" style="box-sizing: border-box;">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -80,6 +80,247 @@
                 <a class="btn btn-back d-inline-flex text-white" href="<?= base_url('page/home'); ?>">
                     Kembali ke Beranda
                 </a>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3>Kelas Abbas</h3>
+                        <h4><?= $cabbas; ?> Santri</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3>Kelas Abu</h3>
+                        <h4><?= $cabu; ?> Santri</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3>Kelas Thaariq</h3>
+                        <h4><?= $cthaariq; ?> Santri</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3>Kelas Umar</h3>
+                        <h4><?= $cumar; ?> Santri</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3>Kelas Uwais</h3>
+                        <h4><?= $cuwais; ?> Santri</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <h2>Kelas Abbas</h2>
+                        </div>
+                        <div class="row mt-3">
+                            <table id="tabel" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama Santri</th>
+                                        <th>Kelas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($kabbas as $a) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $a['namaSantri'] ?></td>
+                                            <td><?= $a['kelas'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <h2>Kelas Abu</h2>
+                        </div>
+                        <div class="row mt-3">
+                            <table id="tabel2" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama Santri</th>
+                                        <th>Kelas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($kabu as $a) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $a['namaSantri'] ?></td>
+                                            <td><?= $a['kelas'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <h2>Kelas Thaariq</h2>
+                        </div>
+                        <div class="row mt-3">
+                            <table id="tabel3" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama Santri</th>
+                                        <th>Kelas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($kthaariq as $a) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $a['namaSantri'] ?></td>
+                                            <td><?= $a['kelas'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <h2>Kelas Umar</h2>
+                        </div>
+                        <div class="row mt-3">
+                            <table id="tabel4" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama Santri</th>
+                                        <th>Kelas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($kumar as $a) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $a['namaSantri'] ?></td>
+                                            <td><?= $a['kelas'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <h2>Kelas Uwais</h2>
+                        </div>
+                        <div class="row mt-3">
+                            <table id="tabel5" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama Santri</th>
+                                        <th>Kelas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($kuwais as $a) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $a['namaSantri'] ?></td>
+                                            <td><?= $a['kelas'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

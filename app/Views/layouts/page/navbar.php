@@ -27,9 +27,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('page/guru'); ?>">Guru</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('page/pendaftaran'); ?>">Pendaftaran</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('page/info'); ?>">Informasi</a>
                         </li>
@@ -54,9 +54,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('page/guru'); ?>">Guru</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('page/pendaftaran'); ?>">Pendaftaran</a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('page/info'); ?>">Informasi</a>
             </li>

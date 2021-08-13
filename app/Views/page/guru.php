@@ -7,6 +7,7 @@
     </div>
 </section>
 
+<!-- 
 <section class="h-100 w-100 bg-white" style="box-sizing: border-box;">
 
     <style>
@@ -80,6 +81,44 @@
                 <a class="btn btn-back d-inline-flex text-white" href="<?= base_url('page/home'); ?>">
                     Kembali ke Beranda
                 </a>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <h2>Data Guru</h2>
+                        </div>
+                        <div class="row mt-3">
+                            <table id="tabelGuru" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama Guru</th>
+                                        <th>Jabatan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($guru as $a) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $a['nama'] ?></td>
+                                            <td><?= $a['jabatan'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
